@@ -34,9 +34,9 @@ public class BST<T extends Comparable<T>> implements Tree<T>{
     public void insert(T data) {
         if (this.root == null) {
             this.root = new Node<>(data);
-        } else {
-            insert(this.root, data);
+            return;
         }
+        insert(this.root, data);
     }
 
     private Node<T> remove(Node<T> root,T data){
