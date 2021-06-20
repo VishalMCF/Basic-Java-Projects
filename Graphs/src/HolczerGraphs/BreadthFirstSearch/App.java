@@ -1,7 +1,7 @@
 package HolczerGraphs.BreadthFirstSearch;
 import java.util.*;
 
-public class Main {
+public class App {
     public static void main(String[] args) {
 
         Vertex A = new Vertex("A");
