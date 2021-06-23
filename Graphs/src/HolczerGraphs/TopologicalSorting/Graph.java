@@ -49,14 +49,8 @@ class Graph {
         }
     }
 
-    public void dfsUtil(Vertex v,Stack<Vertex> stack){
-        v.setVisited(true);
-        for (Vertex vs: v.getNeighbours()) {
-            if(!vs.isVisited()){
-                dfsUtil(vs,stack);
-            }
-        }
-        stack.push(v);
+    public void showTopologicalOrder(Stack<Vertex> stack){
+        System.out.println(stack);
     }
 
     public void topologicalSort(){
@@ -68,10 +62,14 @@ class Graph {
         showTopologicalOrder(stack);
     }
 
-    public void showTopologicalOrder(Stack<Vertex> stack){
-        while(!stack.isEmpty()){
-            System.out.println(stack.pop());
+    public void dfsUtil(Vertex v,Stack<Vertex> stack){
+        v.setVisited(true);
+        for (Vertex vs: v.getNeighbours()) {
+            if(!vs.isVisited()){
+                dfsUtil(vs,stack);
+            }
         }
+        stack.push(v);
     }
 
 

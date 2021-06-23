@@ -35,8 +35,8 @@ public class Graph {
             System.out.println(temp);
             for (Vertex vertex: temp.getAdjacenyList()) {
                 if(!vertex.isVisited()){
-                    vertex.setVisited(true);
                     queue.add(vertex);
+                    vertex.setVisited(true);
                 }
             }
         }

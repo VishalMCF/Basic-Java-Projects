@@ -3,18 +3,22 @@ package HolczerGraphs.TopologicalSorting;
 public class App {
     public static void main(String[] args) {
         Graph g = new Graph();
-        Vertex A = new Vertex("0");
-        Vertex B = new Vertex("1");
-        Vertex C = new Vertex("2");
-        Vertex D = new Vertex("3");
-        Vertex E = new Vertex("5");
-        Vertex F = new Vertex("4");
-        g.addEdge(F,A);
-        g.addEdge(E,A);
+        Vertex A = new Vertex("A");
+        Vertex B = new Vertex("B");
+        Vertex C = new Vertex("C");
+        Vertex D = new Vertex("D");
+        Vertex E = new Vertex("E");
+        Vertex F = new Vertex("F");
+        Vertex G = new Vertex("G");
+        g.addEdge(D,A);
+        g.addEdge(D,E);
+        g.addEdge(A,B);
+        g.addEdge(B,F);
+        g.addEdge(A,G);
         g.addEdge(E,B);
-        g.addEdge(D,B);
-        g.addEdge(C,D);
-        g.addEdge(F,C);
+        g.addEdge(E,C);
+        g.addEdge(C,B);
+        g.addEdge(G,F);
         g.topologicalSort();
     }
 }
