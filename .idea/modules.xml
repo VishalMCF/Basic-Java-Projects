@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AVLTrees/AVLTrees.iml" filepath="$PROJECT_DIR$/AVLTrees/AVLTrees.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AdvancedDataStructure/AdvancedDataStructure.iml" filepath="$PROJECT_DIR$/AdvancedDataStructure/AdvancedDataStructure.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Basic-Java-Projects.iml" filepath="$PROJECT_DIR$/.idea/Basic-Java-Projects.iml" />
       <module fileurl="file://$PROJECT_DIR$/BinarySearchTrees/BinarySearchTrees.iml" filepath="$PROJECT_DIR$/BinarySearchTrees/BinarySearchTrees.iml" />
       <module fileurl="file://$PROJECT_DIR$/Graphs/Graphs.iml" filepath="$PROJECT_DIR$/Graphs/Graphs.iml" />
